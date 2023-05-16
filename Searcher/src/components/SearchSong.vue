@@ -1,4 +1,17 @@
 <template>
+  <!-- <MDBInput
+    @submit="onSubmit"
+    v-model="search3"
+    inputGroup
+    :formOutline="false"
+    wrapperClass="mb-3"
+    placeholder="Lyrics or whatever text in your mind now"
+    aria-label="Search"
+    aria-describedby="button-addon2"
+  >
+    <MDBBtn type="submit" outline="primary">Search</MDBBtn>
+  </MDBInput> -->
+
     <form @submit="onSubmit" class="add-form">
       <div class="form-control">
         <input type="text" v-model="text" name="text" placeholder="Lyrics or whatever text in your mind now" />
@@ -8,6 +21,9 @@
   </template>
 
 <script>
+import { MDBInput, MDBBtn, MDBIcon } from 'mdb-vue-ui-kit';
+import { ref } from 'vue';
+const search3 = ref('');
 export default {
     name: 'SearchSong',
     data() {

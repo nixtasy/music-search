@@ -1,6 +1,6 @@
 <template>
     <header>
-        <h1>{{title}}</h1>
+        <h1 class="mb-3">{{title}}</h1>
         <!-- <Button text="Search for music!" color="green"/> -->
     </header>
 </template>

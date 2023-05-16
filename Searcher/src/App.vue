@@ -1,13 +1,20 @@
 <template>
-  <MDBContainer>
-    <Header title="Lyrics Searcher" />
+    <Header text= "center" title="Lyrics Searcher" />
     <SearchSong @return-query="returnQuery" v-if="!formSubmitted"/>
-    <Songs v-if="formSubmitted" :songs="songs"/>
-    <!-- <p>{{ temp[0]["SName"] }}</p> -->
-  </MDBContainer>
+    <Songs :hit-songs="songs" v-if="formSubmitted"/>
 </template>
 
 <script>
+ import {
+    MDBNavbar,
+    MDBNavbarToggler,
+    MDBNavbarNav,
+    MDBNavbarItem,
+    MDBBtn,
+    MDBCollapse,
+  } from 'mdb-vue-ui-kit';
+  import { ref } from 'vue';
+  const collapse2 = ref(false);
 import Header from './components/Header.vue'
 import Songs from './components/Songs.vue'
 import SearchSong from './components/SearchSong.vue'
@@ -32,13 +39,16 @@ export default {
       this.formSubmitted = !this.formSubmitted
       try {
             // fetch("https://search-backend.fly.dev/search_lyrics/" + text)
-            fetch("127.0.0.1:8000/search_lyrics/" + text)
+            fetch("http://localhost:8000/search_lyrics/" + text)
             .then((response) => {
                 return response.json();
             })
             .then((data) => {
                 // console.log(data);
                 this.songs = data['result']
+                for (const song of this.songs) {
+                  song.readActivated = false
+                }
             });
         } catch (error) {
             console.log(error);
