@@ -1,0 +1,14 @@
+# fly.toml app configuration file generated for search-backend on 2023-05-15T17:17:24+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "search-backend"
+primary_region = "ams"
+
+[http_service]
+  internal_port = 8000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
