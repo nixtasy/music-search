@@ -47,6 +47,7 @@
         <li><a href="#Features">Features</a></li>
       </ul>
     </li>
+    <li><a href="#Payloads and Encoded vectors">Payloads and Encoded vectors</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -74,17 +75,18 @@ The front-end was developed with Vue.js framework and deployed on fly.io. The ba
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Payloads and Encoded vectors
-
-<a href="https://drive.google.com/drive/folders/1tH-PfI24Ov8tFu6O1gu8NKKd0DE4knlT?usp=share_link">Google Drive Folder</a> 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Features
 
 * Search music according to lyrics, optionally narrow down the results on the artist name
 * Look for music matches text which descibes feelings, weathers etc.
 * Search similiar songs based on the previous search result
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## Payloads and Encoded vectors
+
+<a href="https://drive.google.com/drive/folders/1tH-PfI24Ov8tFu6O1gu8NKKd0DE4knlT?usp=share_link">Google Drive Folder</a> 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
