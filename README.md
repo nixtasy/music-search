@@ -1,4 +1,4 @@
-# music-search
+# Semantic Music Search According to Lyrics
 
 <a name="readme-top"></a>
 
