@@ -88,6 +88,8 @@ The front-end was developed with Vue.js framework and deployed on fly.io. The ba
 - [x] Add read-more button on the lyrics card
 - [ ] Add back to homepage button from search results page
 - [ ] Add Spotify links to the search results
+- [ ] Improve performance with larger models
+- [ ] Add more search filters
 - [ ] Multi-language Support
     - [x] English
     - [ ] Portuguese
