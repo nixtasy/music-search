@@ -1,53 +1,86 @@
 <template>
-    <Header text= "center" title="Lyrics Searcher" />
-    <SearchSong @return-query="returnQuery" v-if="!formSubmitted"/>
-    <Songs :hit-songs="songs" v-if="formSubmitted"/>
+    <div v-if="!formSubmitted">
+    <header><h1>Search for your fav tunes with lyrics</h1></header>
+    <SearchSong style="margin-top: 10%;" @return-query="returnQuery"/>
+    <Footer style="margin-top: 40%;" />
+    </div>
+    <!-- <SearchSong @return-query="returnQuery" v-if="!formSubmitted"/> -->
+    <!-- <Songs :hit-songs="songs"/> -->
+    <Songs @search-similiar="searchSimiliar" :hit-songs="songs" v-if="formSubmitted && dataReceived"/>
+    <div v-if="formSubmitted && !dataReceived">
+        <h2>Searching for the most similiar musics for you...</h2>
+        <!-- <img src="Bean Eater.svg" alt="Loading SVG" /> -->
+    </div>
 </template>
 
 <script>
- import {
-    MDBNavbar,
-    MDBNavbarToggler,
-    MDBNavbarNav,
-    MDBNavbarItem,
-    MDBBtn,
-    MDBCollapse,
-  } from 'mdb-vue-ui-kit';
-  import { ref } from 'vue';
-  const collapse2 = ref(false);
-import Header from './components/Header.vue'
 import Songs from './components/Songs.vue'
 import SearchSong from './components/SearchSong.vue'
-import { MDBContainer } from 'mdb-vue-ui-kit';
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    Header,
+    // Header,
     Songs,
     SearchSong,
-    MDBContainer
+    Footer
+    // MDBContainer
   },
   data() {
     return {
       songs: [],
-      formSubmitted: false
+      offset: "",
+      formSubmitted: false,
+      dataReceived: false,
     }
   },
   methods: {
-    returnQuery(text){
+    returnQuery({text, artist}){
       this.formSubmitted = !this.formSubmitted
+      artist?(this.offset = "&filter="+artist):(this.offset="")
       try {
-            // fetch("https://search-backend.fly.dev/search_lyrics/" + text)
-            fetch("http://localhost:8000/search_lyrics/" + text)
+            fetch("https://search-backend.fly.dev/search_lyrics/?prompt=" + text+this.offset)
+            // fetch("http://localhost:8000/search_lyrics/?prompt=" +text+this.offset)
             .then((response) => {
                 return response.json();
             })
             .then((data) => {
-                // console.log(data);
                 this.songs = data['result']
-                for (const song of this.songs) {
-                  song.readActivated = false
+                this.dataReceived = !this.dataReceived
+                if (this.songs.length == 0) {
+                    alert("Sorry! Nothing found ... Click OK to start a new search!");
+                    window.location.reload();
+                } else {
+                  for (const song of this.songs) {
+                    song.readActivated = false
+                  }
+                }
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    },
+    searchSimiliar(text){
+      // this.formSubmitted = !this.formSubmitted
+      // artist?(this.offset = "&filter="+artist):(this.offset="")
+      this.dataReceived = !this.dataReceived
+      try {
+        fetch("https://search-backend.fly.dev/search_lyrics/?prompt=" + text+this.offset)
+            // fetch("http://localhost:8000/search_lyrics/?prompt=" +text)
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                this.songs = data['result']
+                this.dataReceived = !this.dataReceived
+                if (this.songs.length == 0) {
+                    alert("Sorry! Nothing found ... Click OK to start a new search!");
+                    window.location.reload();
+                } else {
+                  for (const song of this.songs) {
+                    song.readActivated = false
+                  }
                 }
             });
         } catch (error) {

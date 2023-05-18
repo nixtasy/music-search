@@ -1,29 +1,22 @@
 <template>
-    <header>
-        <h1 class="mb-3">{{title}}</h1>
-        <!-- <Button text="Search for music!" color="green"/> -->
-    </header>
-</template>
+    <MDBNavbar light bg="light" container>
+      <MDBNavbarBrand href="#">Navbar</MDBNavbarBrand>
+      <form class="d-flex input-group w-auto">
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Type query"
+          aria-label="Search"
+        />
+        <MDBBtn outline="primary"> Search </MDBBtn>
+      </form>
+    </MDBNavbar>
+  </template>
 
 <script>
-import Button from './Button.vue'
-
-export default {
-    name: 'Header',
-    props: {
-        title: String,
-    },
-    components:{
-        Button
-    }
-}
+import { MDBBtn, MDBNavbar, MDBNavbarBrand } from 'mdb-vue-ui-kit';
+export default{
+    components: { MDBContainer,MDBInput, MDBBtn }
+  }
+  
 </script>
-
-<style scoped>
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-</style>
