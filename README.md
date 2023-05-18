@@ -67,7 +67,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The music search app is essentially a semantic search engine based on a sentence transformer, <a href="	https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2">all-MiniLM-L12-v2 </a> model and powered by Qdrant vector search engine with a cloud solution.
+The music search app is essentially a semantic search engine based on a sentence transformer, <a href="https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2">"all-MiniLM-L12-v2"</a> model and powered by Qdrant vector search engine with a cloud solution.
 
 The dataset used in this project is a English subset of <a href="https://www.kaggle.com/datasets/neisse/scrapped-lyrics-from-6-genres">Song lyrics from 79 musical genres</a> which contains 191,814 instances of lyrics with its corresponding artist and song name.
 
