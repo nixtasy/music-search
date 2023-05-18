@@ -1,16 +1,6 @@
 # music-search
-Semantic search engine for finding your favourite music according to the lyrics 
 
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
 
 
 <!-- PROJECT SHIELDS -->
@@ -41,9 +31,10 @@ Semantic search engine for finding your favourite music according to the lyrics
   <h3 align="center">music-search</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Semantic search engine for finding your favourite music according to the lyrics!
+    
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://search-frontend.fly.dev"><strong>Try it now »</strong></a>
     <br />
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
