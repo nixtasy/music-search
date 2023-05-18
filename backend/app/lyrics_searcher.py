@@ -11,8 +11,8 @@ class LyricsSearcher:
         self.collection_name = collection_name
         self.model = SentenceTransformer('all-MiniLM-L12-v2', device='cpu')
         self.qdrant_client = QdrantClient(
-        url="https://b976d30b-c420-490a-af80-dde93b7c9434.us-east-1-0.aws.cloud.qdrant.io:6333", 
-        api_key="DAXQsPthbMoA5R9kOfnloZ2BEIBeJeFIWdCchUTO2Bjrxtm8yepQ5A"
+        url="Qdrant Cluster URL", 
+        api_key="your api key"
         )
         # self.qdrant_client = QdrantClient(host='localhost', port=6333)
 

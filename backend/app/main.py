@@ -21,6 +21,10 @@ lyrics_searcher = LyricsSearcher(collection_name='lyrics')
 async def read_root():
     return {"status": "ok"}
 
+@app.get("/healthcheck")
+def read_root():
+     return {"status": "ok"}
+
 @app.get("/search_lyrics/")
 async def search_lyrics(prompt: str, filter: str = None):
     return {
