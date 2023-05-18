@@ -34,7 +34,8 @@ Semantic search engine for finding your favourite music according to the lyrics
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+<!--     <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
+    ![Farmers Market Finder Demo](demo/demo.gif)
   </a>
 
   <h3 align="center">music-search</h3>
