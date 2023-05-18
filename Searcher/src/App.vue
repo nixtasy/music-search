@@ -1,15 +1,12 @@
 <template>
     <div v-if="!formSubmitted">
-    <header><h1>Search for your fav tunes with lyrics</h1></header>
-    <SearchSong style="margin-top: 10%;" @return-query="returnQuery"/>
-    <Footer style="margin-top: 40%;" />
+      <header><h1>Search for your fav tunes with lyrics</h1></header>
+      <SearchSong style="margin-top: 10%;" @return-query="returnQuery"/>
+      <Footer style="margin-top: 40%;" />
     </div>
-    <!-- <SearchSong @return-query="returnQuery" v-if="!formSubmitted"/> -->
-    <!-- <Songs :hit-songs="songs"/> -->
     <Songs @search-similiar="searchSimiliar" :hit-songs="songs" v-if="formSubmitted && dataReceived"/>
     <div v-if="formSubmitted && !dataReceived">
         <h2>Searching for the most similiar musics for you...</h2>
-        <!-- <img src="Bean Eater.svg" alt="Loading SVG" /> -->
     </div>
 </template>
 
@@ -21,11 +18,9 @@ import Footer from './components/Footer.vue'
 export default {
   name: 'App',
   components: {
-    // Header,
     Songs,
     SearchSong,
     Footer
-    // MDBContainer
   },
   data() {
     return {
