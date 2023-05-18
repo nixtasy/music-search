@@ -66,7 +66,9 @@ The music search app is essentially a semantic search engine based on a sentence
 
 ### Built With
 
-The dataset used in this project is a English subset of <a href="https://www.kaggle.com/datasets/neisse/scrapped-lyrics-from-6-genres">Song lyrics from 79 musical genres</a> which contains 191,814 instances of lyrics with its corresponding artist and song name.
+all-MiniLM-L12-v2 model has been trained on a large and diverse dataset of over 1 billion training pairs,and tuned for many use-cases. 
+
+The dataset used in this project is an English subset of <a href="https://www.kaggle.com/datasets/neisse/scrapped-lyrics-from-6-genres">Song lyrics from 79 musical genres</a> I specifically created for searching within English lyrics, which contains 191,814 instances of lyrics with their corresponding artists and song names.
 
 The front-end was developed with Vue.js framework and deployed on fly.io. The back-end was developed with FastAPI and uvicorn and deployed on fly.io.
 
