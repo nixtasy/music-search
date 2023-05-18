@@ -59,7 +59,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The music search app is essentially a semantic search engine based on a sentence transformer, <a href="https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2">"all-MiniLM-L12-v2"</a> model and powered by <a href="https://cloud.qdrant.io">Qdrant Cloud</a>.
+The music search app is essentially a semantic search engine based on a sentence transformer, <a href="https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2">"all-MiniLM-L12-v2"</a> model and powered by <a href="https://cloud.qdrant.io">Qdrant Vector Search Cloud</a>.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
