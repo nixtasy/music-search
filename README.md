@@ -31,6 +31,7 @@ Semantic search engine for finding your favourite music according to the lyrics
 
 
 <!-- PROJECT LOGO -->
+![](demo.gif)
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
