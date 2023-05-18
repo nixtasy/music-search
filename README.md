@@ -21,12 +21,7 @@
 ![](demo.gif)
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://github.com/nixtasy/music-search/demo.gif" alt="Logo" width="80" height="80">
-  </a>
-
   <h3 align="center">music-search</h3>
-
   <p align="center">
     Semantic search engine for finding your favourite music according to the lyrics!
     <br />
