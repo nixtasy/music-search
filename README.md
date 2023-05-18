@@ -32,7 +32,6 @@
 
   <p align="center">
     Semantic search engine for finding your favourite music according to the lyrics!
-    
     <br />
     <a href="https://search-frontend.fly.dev"><strong>Try it now »</strong></a>
     <br />
