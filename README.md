@@ -128,10 +128,14 @@ I've included a few tools,products and articles which inspired the projects:
 
 * [Material Design for Bootstrap 5 & Vue 3](https://mdbootstrap.com/docs/vue/)
 * [Qdrant vector similarity search engine](https://qdrant.tech)
+* [vue.js](https://vuejs.org)
+* [FastAPI](https://fastapi.tiangolo.com)
+* [fly.io](https://fly.io/)
 * [How to Create a web app ..for generating and showcasing images ...](https://medium.com/@sangeeth123sj/how-to-create-a-web-app-using-fastapi-vuejs-and-mongodb-for-generating-and-showcasing-images-193ccdb20091)
 * [部署 Vue App 到 Fly.io 雲端平台](https://learningsky.io/deploy-vue-docker-container-app-to-flyio-cloud/)
 * [Neural search demo](https://github.com/qdrant/qdrant_demo)
 * [Neural Search Tutorial](https://qdrant.tech/articles/neural-search-tutorial/)
+* [Demo your App in your GitHub README with an Animated GIF](https://dev.to/kelli/demo-your-app-in-your-github-readme-with-an-animated-gif-2o3c)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
