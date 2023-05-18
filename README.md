@@ -74,6 +74,12 @@ The front-end was developed with Vue.js framework and deployed on fly.io. The ba
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Payloads and Encoded vectors
+
+<a href="https://drive.google.com/drive/folders/1tH-PfI24Ov8tFu6O1gu8NKKd0DE4knlT?usp=share_link">Google Drive Folder</a> 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Features
 
 * Search music according to lyrics, optionally narrow down the results on the artist name
