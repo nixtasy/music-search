@@ -97,6 +97,7 @@ The front-end was developed with Vue.js framework and deployed on fly.io. The ba
 - [ ] Multi-language Support
     - [x] English
     - [ ] Portuguese
+    - [ ] Chinese
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
